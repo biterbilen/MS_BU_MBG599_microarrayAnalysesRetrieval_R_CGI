@@ -1,0 +1,11 @@
+%comment lines start with `%` character like this line itself
+%Type File format:a tab-separated file with two columns
+%1st column: name of a file which should be exactly same with the 
+%existing file in the .zip archive
+%2nd column: sample type of the file (actually we give integer numbers as types 
+%that distinguish the samples
+%the order of the rows is not important
+a_1.CEL	1
+a_2.CEL	1
+b_1.CEL	2
+b_2.CEL	2

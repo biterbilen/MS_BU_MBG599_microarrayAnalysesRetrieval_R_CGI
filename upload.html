@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<TITLE>CEL File Upload</TITLE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CEL File Upload</title>
+<meta name="http-equiv" content="Content-Type" />
+<meta name="content" content="text/html" />
+<meta name="author" content="Biter Bilen" />
+</head>
+<body>
+<div align="justify" class="style1 style2">
+  <h1>CEL File Upload</h1>
+  <hr />
+</div>
+<form method="post" action="hgu1332A_normalize.cgi" enctype="multipart/form-data">
+  <div align="justify" class="style1 style2"></div>
+  <p>HGU133 Plus 2.0 Affymetrix .CEL file archive in .zip Format: <a href="input/ab.zip">Example .zip File</a> <br />
+    <input type="file" name="cel" size="70" />
+  </p>
+  <p>Phenodata File: <a href="input/typeFiletemplate.txt">Example Phenodata File</a> <br />
+    <input type="file" name="type" size="70" />
+  <p>
+  <p>Display:</p>
+    <input type="checkbox" name="boxplot" value="boxplot" checked="checked" />
+    Boxplot<br>
+    <input type="checkbox" name="hist" value="hist" />
+    Histogram<br>
+    <input type="checkbox" name="maplot" value="maplot" checked="checked" />
+    MAplot<br>
+    <input type="checkbox" name="rna" value="rna" checked="checked" />
+    RNA Degradation<br>
+    <input name="resids" type="checkbox" value="resids" checked="checked" />
+    PLM Residuals Image<br>
+    <input type="checkbox" name="rle" value="rle" checked="checked" />
+    PLM RLE<br>
+    <input type="checkbox" name="nuse" value="nuse" />
+    PLM NUSE<br>
+  <p>
+    <input type="submit" name="preprocess" value="Upload & Preprocess">
+  </p>
+  <hr />
+</form>
+</body>
+</html>
